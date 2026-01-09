@@ -6,6 +6,9 @@ import streamlit as st
 # Load the data
 ANIMES_DF = pd.read_parquet('../data/processed_animes.parquet')
 
+# Convert genre strings to sets for easier comparison
+ANIMES_DF['genre_set'] = ANIMES_DF['genre'].fillna('').apply(lambda x: set(x.split(', ')))
+
 def genre_similarity(genres1, genres2):
     """Calculate Jaccard similarity between two genre sets"""
 
