@@ -16,8 +16,6 @@ def genre_similarity(genres1, genres2):
     if len(genres1) == 0 or len(genres2) == 0:
         return 0
 
-    print(type(genres1))
-
     # Calculate intersection (common genres) and union (all unique genres)
     intersection = len(genres1.intersection(genres2))
     union = len(genres1.union(genres2))
