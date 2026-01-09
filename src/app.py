@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 # Load the data
-ANIMES_DF = pd.read_csv('../data/processed_animes.parquet')
+ANIMES_DF = pd.read_parquet('../data/processed_animes.parquet')
 
 def genre_similarity(genres1, genres2):
     """Calculate Jaccard similarity between two genre sets"""
