@@ -46,6 +46,14 @@ def get_anime_recommendations(target_anime_id: int):
     return similar_animes
 
 
-similar_animes = get_anime_recommendations(1)
+if __name__ == '__main__':
 
-print(similar_animes)
+
+    st.title('Anime movie recommender')
+
+    anime_number = st.number_input('Input the anime number')
+
+    similar_animes = get_anime_recommendations(int(anime_number))
+
+    st.write(similar_animes)
+
