@@ -2,7 +2,7 @@
 
 This repository demonstrates set-up and deployment of a simple Streamlit web application with a content-based filtering recommendation system that suggests similar anime titles based on genre similarity using the Jaccard distance metric.
 
-View the live deployment here: [anime-recommendations-qtbq.onrender.com](https://anime-recommendations-qtbq.onrender.com).
+View the live deployment here: [anime-recommendations-qtbq.onrender.com](https://anime-recommendations-qtbq.onrender.com)
 
 ## Overview
 
