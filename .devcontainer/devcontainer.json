@@ -61,7 +61,7 @@
 
 	// Use 'postAttachCommand' to run commands each time a user connects to the container
 	// This runs every time VS Code attaches/reconnects to the container
-	// Start the app via strealit
+	// Start the app via Streamlit
 	"postAttachCommand": "streamlit run src/app.py",
 
 	// Configure port forwarding for the app
